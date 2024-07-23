@@ -1,5 +1,7 @@
 {% # theme-check-disable LiquidTag, TemplateLength %}
 
+<link rel="stylesheet" href="{{ 'header.css' | asset_url }}" media="print" onload="this.media='all'">
+
 {%- liquid
   assign has_mega_nav_pills = false
   assign has_mega_nav_columns = false

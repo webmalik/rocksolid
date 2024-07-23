@@ -13,7 +13,7 @@
         "logo_text": "",
         "logo_type_scale": "2",
         "logo": "shopify:\/\/shop_images\/header-logo.png",
-        "logo_width": 150,
+        "logo_width": 270,
         "logo_h1": true,
         "logo_center": true,
         "enable_search": true,
@@ -50,22 +50,32 @@
           "settings": {
             "text": "<p><strong>New products now on Pre-Sale!<\/strong><\/p>"
           }
+        },
+        "announcement_T84eca": {
+          "type": "announcement",
+          "settings": {
+            "text": "<p>Welcome to our store. <a href=\"#\" title=\"#\">Learn more<\/a><\/p>"
+          }
         }
       },
       "block_order": [
         "announcement-1",
-        "announcement-2"
+        "announcement-2",
+        "announcement_T84eca"
+      ],
+      "custom_css": [
+        "p {text-transform: uppercase;}"
       ],
       "settings": {
         "link1": "",
         "link1_label": "",
         "link2": "",
         "link2_label": "",
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "bg_color": "#000000",
-        "text_color": "#ffffff",
-        "text_type_scale": "small",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "bg_color": "#f4f6f9",
+        "text_color": "#53a61c",
+        "text_type_scale": "large",
         "read_time": 7
       }
     }

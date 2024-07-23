@@ -22,3 +22,16 @@
     line-height: 150%; /* 27px */
     right: 10px;
 }
+.announcement {
+    padding: 8px 0px;
+    text-transform: uppercase;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.cc-announcement {
+    z-index: 29 !important;
+}

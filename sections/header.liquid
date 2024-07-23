@@ -9,7 +9,7 @@
 
   if section.blocks.size > 0
     for block in section.blocks
-      if block.type == "pills"
+      if block.type == "pills" 
         assign has_mega_nav_pills = true
       elsif block.type == "columns"
         assign has_mega_nav_columns = true
@@ -28,7 +28,7 @@
   if settings.show_search_types and shop.types
     assign show_search_types = true
   endif
--%}
+-%} 
 
 {%- style -%}
   .header {
@@ -130,6 +130,11 @@
           </a>
         {%- endunless -%}
       {%- endif -%}
+	  {%- if section.settings.btn_text != empty -%}
+		<a href="#">
+			{% section.settings.btn_text %}
+		</a>
+	  {%-endif-%}
       {%- if shop.customer_accounts_enabled -%}
         {%- if customer -%}
           <a class="header__icon text-current" href="{{ routes.account_url }}">
@@ -804,12 +809,12 @@
     {
       "type": "range",
       "id": "logo_width",
-      "min": 50,
+      "min": 150,
       "max": 300,
-      "step": 10,
+      "step": 2,
       "unit": "px",
       "label": "Maximum logo width",
-      "default": 150
+      "default": 276
     },
     {
       "type": "checkbox",
@@ -823,6 +828,18 @@
       "id": "logo_center",
       "label": "Center logo on large screens",
       "default": false
+    },
+	{
+      "type": "header",
+      "content": "Button"
+    },
+	{
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button text",
+      "info": "Shop now text",
+      "placeholder": "Use shop now",
+      "default": "SHOP NOW"
     },
     {
       "type": "header",

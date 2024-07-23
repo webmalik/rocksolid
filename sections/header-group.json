@@ -12,7 +12,7 @@
         "mobile_menu_position": "burger-right",
         "logo_text": "",
         "logo_type_scale": "2",
-        "logo": "{{ shop.brand.logo }}",
+        "logo": "shopify:\/\/shop_images\/header-logo.png",
         "logo_width": 150,
         "logo_h1": true,
         "logo_center": true,

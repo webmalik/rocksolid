@@ -1,0 +1,19 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "settings": {
+        "pagination": "bar-reading"
+      }
+    },
+    "article-comments": {
+      "type": "article-comments",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "article-comments"
+  ]
+}

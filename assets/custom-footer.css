@@ -1,0 +1,17 @@
+.footer {
+    background: var(--Black-Deep, #121314);
+    color: var(--White_on_dark, #f4f6f9);
+}
+
+.disclosure__title {
+    color: var(--Green, #53a61c);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    text-transform: capitalize;
+}
+.footer__hr {
+    background: #4f5250;
+}

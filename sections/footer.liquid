@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="{{ 'footer.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'custom-footer.css' | asset_url }}" media="print" onload="this.media='all'">
 
 {%- if section.settings.enable_country_selector or section.settings.enable_language_selector -%}
   <script src="{{ 'custom-select.js' | asset_url }}" defer="defer"></script>
@@ -185,7 +186,7 @@
         {%- assign copyright_year = 'now' | date: '%Y' -%}
         <span>{{ 'sections.footer.copyright_html' | t: year: copyright_year, shop_url: routes.root_url, shop_name: shop.name }}</span>
         {% if section.settings.show_powered_by %}
-          <span>{{ powered_by_link }}</span>
+          <span>All Rights Reserved </span>
         {% endif %}
       </div>
       {%- if section.settings.secondary_menu != blank -%}
